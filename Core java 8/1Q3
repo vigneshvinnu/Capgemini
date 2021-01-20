@@ -1,0 +1,35 @@
+import java.lang.*;
+import java.util.Scanner;
+public class SiCi {
+		public double simpleInterest(double principalAmount,int time,double interestRate)
+		{
+			double Simple_Interest;
+			Simple_Interest = (principalAmount*interestRate*time)/100;
+			return Simple_Interest;	
+		}
+	    public double compoundInterest(double principalAmount,int time,double interestRate)
+	    {
+	    	double Compound_Interest;
+	    	interestRate=interestRate+1;
+	    	Compound_Interest = (principalAmount*(Math.pow(interestRate,time)))-principalAmount;
+	    	return Compound_Interest;
+	    	
+	    }
+}
+public class Assignment1Q3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		double principal,rate;
+		int time;
+		principal=s.nextDouble();
+		Scanner j=new Scanner(System.in);
+		rate=j.nextDouble();
+		Scanner k=new Scanner(System.in);
+		time=k.nextInt();
+		SiCi h=new SiCi();
+		System.out.println(h.simpleInterest(principal,time,rate));
+		System.out.println(h.compoundInterest(principal,time,rate));
+		}
+}
