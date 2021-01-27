@@ -41,21 +41,22 @@ public class Assignment5Q1 {
 
     public static List<Fruit> reverseSort(ArrayList<Fruit> fruits) 
     {
-    	
-    	
+    	Collections.reverse(fruits);
+    	fruits.stream().filter(p->p.getCalories()<100).forEach((fruit)->System.out.println(fruit.getName()+"   "+fruit.getCalories()));
 		return fruits;
     	
     }
     public static ArrayList<Fruit> sort(ArrayList<Fruit> Fruits)
     {
-    
-    	return (ArrayList<Fruit>) Fruits;
+    	Fruits.stream().sorted(Comparator.comparing(Fruit::getColor)).forEach((fruit)->System.out.println(fruit.getName()));
+    	return Fruits;
     }
 
     public static ArrayList<Fruit> filterRedSortPrice(ArrayList<Fruit> FRuits)
     {
+    	FRuits.stream().filter(p->p.getColor()=="Red").forEach((fruit)->System.out.println(fruit.getName()));
     	
-    	return (ArrayList<Fruit>) FRuits;
+    	return FRuits;
     }
 
     @SuppressWarnings("static-access")
@@ -65,24 +66,20 @@ public class Assignment5Q1 {
     	
     	ArrayList<Fruit> Fruits=new ArrayList<Fruit>();
     	Fruits.add(new Fruit("Custard Apple",1000,100,"Green"));
-    	 Fruits.add(new Fruit("Water melon",10,50,"Light Green"));
-    	 Fruits.add(new Fruit("oranges",30,100,"Orange"));
-    	 Fruits.add(new Fruit("Apple",400,200,"Red"));
+    	Fruits.add(new Fruit("Water melon",10,50,"Light Green"));
+    	Fruits.add(new Fruit("oranges",30,100,"Orange"));
+    	Fruits.add(new Fruit("Apple",400,200,"Red"));
     	 
-    	ArrayList<Fruit> Fruits1=new ArrayList<Fruit>(); 
+    	List<Fruit> Fruits1=new ArrayList<Fruit>(); 
 		Fruits1=(ArrayList<Fruit>) reverseSort(Fruits);
-    	Collections.reverse(Fruits1);
-    	Fruits1.stream().filter(p->p.getCalories()<100).forEach((fruit)->System.out.println(fruit.getName()+"   "+fruit.getCalories()));
-   
+        System.out.println("------");
+        
     	ArrayList<Fruit> Fruits2=new ArrayList<Fruit>(); 
 		Fruits2=(ArrayList<Fruit>) sort(Fruits);
-    	
-    	Fruits2.stream().sorted(Comparator.comparing(Fruit::getColor)).forEach((fruit)->System.out.println(fruit.getName()));
-    	
+    	System.out.println("------");
     	
     	ArrayList<Fruit> Fruits3=new ArrayList<Fruit>(); 
-		Fruits3=(ArrayList<Fruit>) filterRedSortPrice(Fruits);
-    	  Fruits3.stream().filter(p->p.getColor()=="Red").forEach((fruit)->System.out.println(fruit.getName()));    	
+		Fruits3=(ArrayList<Fruit>) filterRedSortPrice(Fruits);  	
      }
 
 }
