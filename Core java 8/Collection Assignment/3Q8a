@@ -1,7 +1,6 @@
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
 public class Assignment3Q8a {
     public static void failFast(Map<String, String> cityCode)
     {
