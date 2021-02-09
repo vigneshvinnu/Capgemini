@@ -30,7 +30,7 @@ class ParkingSlot {
 		return carNumber;
 	}
 	
-	public int getToken() 
+	public int getToken()
 	{
 		return token;
 	}
