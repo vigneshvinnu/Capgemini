@@ -1,0 +1,85 @@
+.box
+{
+display:block;
+}
+h1
+{
+text-align:center;
+
+
+font-size:60px;
+}
+
+
+h2
+{
+text-align:center;
+
+
+font-size:40px;
+}
+
+img
+{
+border-radius:50%;
+max-width: 100%;
+  height: auto;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: 	#808080;
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+#landing {
+  background: 	#484848;
+}
+
+#landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+
+
+
+#frames
+{
+text-align:center;
+font-size:50px;
+color:white;
+}
+body
+{
+background:grey;
+}
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #444;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
