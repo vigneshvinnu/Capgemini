@@ -10,4 +10,5 @@ class Rectangle {
   }
 
   var Rectangle1 = new Rectangle(100,100)
+
   Rectangle1.getArea();
