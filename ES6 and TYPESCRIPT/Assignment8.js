@@ -48,7 +48,9 @@ var SavingsAccount = /** @class */ (function (_super) {
             return balance3_1;
         }
         else
+            
             console.log("Balance for Savings account", balance3);
+        
         return balance3;
     };
     return SavingsAccount;
@@ -80,7 +82,9 @@ var CurrentAccount = /** @class */ (function (_super) {
             return balance3_2;
         }
         else
+            
             console.log("Balance for current account", balance3);
+        
         return balance3;
     };
     return CurrentAccount;
