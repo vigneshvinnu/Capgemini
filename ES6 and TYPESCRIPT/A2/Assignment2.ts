@@ -14,6 +14,7 @@ function getNextArmstrong(n:any) {
         console.log(w);
         break;
      }
+      result=0;
 }
 }
 getNextArmstrong(153);
