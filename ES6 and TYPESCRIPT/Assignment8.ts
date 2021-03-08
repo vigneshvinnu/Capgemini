@@ -24,7 +24,6 @@ class Account
 
            return balance2;
         }  
-
         getCash_credit()
         {
             let balance3=this.balance1*0.1+this.balance1;
